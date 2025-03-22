@@ -18,7 +18,6 @@ class CheckoutController extends Controller
     {
         if (Auth::check()) 
         {
-            
             $cartId = session('cart_id');
 
             $quotedata = Quote::where('cart_id', $cartId)->first();
